@@ -1,4 +1,12 @@
-body {
+:root {
+  --pink-color: #E2A1AB;
+  --lightblue: #A6C8D9;
+  --green: #7BA69A;
+  --darkblue: #527883;
+  --yellow: #F7EFB2;
+}
+
+html {
   margin: 0;
-  background: #E2A1AB;
+  background: var(--pink-color);
 }

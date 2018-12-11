@@ -1,21 +1,28 @@
 .nav {
     width: 100vw;
     height: 100px;
-    position: fixed;
-    background: #527883;
+    /* position: fixed; */
+    background: var(--darkblue);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 ul {
     display: flex;
-    flex-flow: row;
-    width: 100%;
+    /* width: 100%; */
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    /* background: red; */
+    padding: 0;
 }
 
 li {
     flex: 1;
-    color: #F7EFB2;
+    color: var(--yellow);
     text-transform: uppercase;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
 }

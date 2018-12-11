@@ -1,0 +1,35 @@
+.dog-container {
+    width: 100vw;
+    display: flex;
+    /* background: red; */
+    justify-content: space-around;
+}
+
+.dogs {
+    height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    background: var(--yellow);
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.dogs a, .dogs img, .dogs p {
+    flex: 1;
+}
+
+.dogs a {
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--lightblue);
+}
+
+.dogs a:hover {
+    color: var(--green);
+}

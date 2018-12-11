@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+.welcome {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'Monoton', cursive;
+    color: var(--darkblue);
+    font-size: 90px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 22px;
+    color: var(--green);
+}
