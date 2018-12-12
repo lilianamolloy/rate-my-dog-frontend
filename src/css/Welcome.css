@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-p {
+.welcome p {
     font-family: 'Monoton', cursive;
     color: var(--darkblue);
     font-size: 90px;

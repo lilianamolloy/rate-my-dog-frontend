@@ -19,6 +19,16 @@
     border-radius: 5px;
 }
 
+.dog {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+}
+
 .dogs a, .dogs img, .dogs p {
     flex: 1;
 }

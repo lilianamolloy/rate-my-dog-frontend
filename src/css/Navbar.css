@@ -20,9 +20,13 @@ ul {
 
 li {
     flex: 1;
-    color: var(--yellow);
     text-transform: uppercase;
     /* border: 1px solid white; */
     display: flex;
     justify-content: center;
+}
+
+li a {
+    color: var(--yellow);
+    text-decoration: none;
 }
