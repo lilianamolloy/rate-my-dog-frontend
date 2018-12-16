@@ -19,16 +19,6 @@
     border-radius: 5px;
 }
 
-.dog {
-    height: calc(100vh - 100px);
-    width: 100vw;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--yellow);
-}
-
 .dogs a, .dogs img, .dogs p {
     flex: 1;
 }
@@ -42,4 +32,26 @@
 
 .dogs a:hover {
     color: var(--green);
+}
+
+.dog {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    text-transform: capitalize;
+    color: var(--pink-color);
+
+}
+
+.dog img {
+    width: 400px;
+    border-radius: 100%;
+}
+
+.dogs img {
+    border-radius: 100%;
 }

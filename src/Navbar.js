@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li>
                     <a href="/"><img src="https://www.emoji.co.uk/files/emoji-one/animals-nature-emoji-one/1517-dog.png" alt="logo" height="50"/></a>
                 </li>
-                <li>Add Dogs</li>
+                <li><a href="/add">Add Dogs</a></li>
             </ul>
         </div>
     )

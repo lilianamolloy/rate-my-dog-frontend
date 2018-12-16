@@ -1,21 +1,34 @@
-import React from 'react';
-import './css/Dogs.css';
+import React, { Component } from 'react';
+import PrintDogs from './PrintDogs';
+import Available from './Available';
 
-const Dogs = (props) => {
-    let link;
-    !props.description ? link = `/dogs/${props.id}`: link = null;
+class Dogs extends Component {
+    state = {
+        dogs: null
+      }
 
-    let styling;
-    !props.description ? styling = "dogs" : styling = "dog";
-  
-    return (
-        <div className={styling}>
-            <a href={link}><h1>{props.name}</h1></a>
-            <img src={props.image} alt="pictures of very cute dogs" width="200" />
-            <p>{props.rating}</p>
-            {props.description ? <p>{props.description}</p> : null}
-        </div>
-    )
-};
+    componentDidMount(){
+    const url = "http://localhost:5000/dogs";
+    fetch(url)
+        .then(resp => resp.json())
+        .then(json => {
+            this.setState({ dogs: json})
+        })
+    }
+
+    render() {
+        const { dogs } = this.state
+        
+        if(dogs){
+            if(this.props.available === true) {
+                return <Available dogs={dogs} />
+            } else {
+                return <PrintDogs dogs={dogs} />
+            }
+        } else {
+            return <h1>Loading ...</h1>
+        }
+    }
+}
 
 export default Dogs;
