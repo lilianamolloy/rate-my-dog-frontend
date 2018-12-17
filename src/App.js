@@ -3,9 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './css/App.css';
 import Navbar from './Navbar';
 import Welcome from './Welcome';
-// import PrintDogs from './PrintDogs';
 import Error from './Error';
-import Available from './Available';
 import Form from './Form';
 import Dogs from './Dogs';
 
@@ -28,7 +26,8 @@ class App extends Component {
           <Switch>
             <Route path="/" component={Welcome} exact/>
             <Route path="/dogs" component={Dogs} exact/>
-            <Route path="/dogs/:id" render={() => <Dogs available={true}/> }/>
+            {/* <Route path="/dogs/:id" render={() => <Dogs available={true}/> }/> */}
+            <Route path="/dogs/:id" component={Dogs}/>
             <Route path="/add" render={() => <Form onSubmit={fields => this.onSubmit(fields)}/>}/>/> 
             <Route component={Error}/>
           </Switch>

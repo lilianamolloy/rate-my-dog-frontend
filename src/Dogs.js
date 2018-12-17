@@ -18,10 +18,10 @@ class Dogs extends Component {
 
     render() {
         const { dogs } = this.state
-        
+        console.log(this.props)
         if(dogs){
-            if(this.props.available === true) {
-                return <Available dogs={dogs} />
+            if(this.props.match.params.id) {
+                return <Available dogs={dogs} id={this.props.match.params.id}/>
             } else {
                 return <PrintDogs dogs={dogs} />
             }
